@@ -34,11 +34,11 @@ sed -i "/CONFIG_FIRMWARE_INCLUDE_HTTPS/d"  .config              #  HTTPS support
 # C大
 sed -i '/CONFIG_FIRMWARE_INCLUDE_MENTOHUST/d' .config    # 删除配置项 MENTOHUST
 sed -i '/CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT/d' .config   # 删除配置项 SCUTCLIENT
-sed -i '/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS/d' .config  # 删除配置项 SS plus+
+sed -i '/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS/y' .config  # 删除配置项 SS plus+
 sed -i '/CONFIG_FIRMWARE_INCLUDE_SSSERVER/d' .config     # 删除配置项 SS server
 sed -i '/CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER/d' .config # 删除配置项 DNS-FORWARDER
 sed -i '/CONFIG_FIRMWARE_INCLUDE_ADBYBY/d' .config       # 删除配置项 adbyby plus+
-sed -i '/CONFIG_FIRMWARE_INCLUDE_TUNSAFE/d' .config      # 删除配置项 TUNSAFE
+sed -i '/CONFIG_FIRMWARE_INCLUDE_TUNSAFE/y' .config      # 删除配置项 TUNSAFE
 sed -i '/CONFIG_FIRMWARE_INCLUDE_ALIDDNS/d' .config      # 删除配置项 阿里 DDNS
 sed -i '/CONFIG_FIRMWARE_INCLUDE_SMARTDNS/d' .config     # 删除配置项 smartDns
 sed -i '/CONFIG_FIRMWARE_INCLUDE_SRELAY/d' .config       # 删除配置项 srelay 代理
@@ -55,7 +55,7 @@ echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=y" >> .config     # SS server
 #echo "CONFIG_FIRMWARE_INCLUDE_TROJAN=n" >> .config #集成trojan执行文件(1.1M左右)，如果不集成，会从网上下载下来执行，不影响正常使用
 
 #  代理
-echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=n" >> .config      # TUNSAFE
+echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=y" >> .config      # TUNSAFE
 echo "CONFIG_FIRMWARE_INCLUDE_KUMASOCKS=y" >> .config    # KUMA
 echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config       # srelay
 echo "CONFIG_FIRMWARE_INCLUDE_IPT2SOCKS=n" >> .config    # IPT2
