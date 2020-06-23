@@ -56,11 +56,11 @@ sed -i "/CONFIG_FIRMWARE_INCLUDE_WYYBIN/d" >> .config     # 删除配置项 网�
 ######################################################################
 
 # 科学
-echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config  # SS plus+
+echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y"  .config  # SS plus+
 echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=n" >> .config     # SS server
 
 #  代理
-echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=n" >> .config      # TUNSAFE
+echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=n"  .config      # TUNSAFE
 echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config       # srelay
 echo "CONFIG_FIRMWARE_INCLUDE_IPT2SOCKS=n" >> .config    # IPT2
 
