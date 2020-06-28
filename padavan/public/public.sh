@@ -5,7 +5,7 @@
 user_name='admin'                        # 用户名
 user_password=$user_name                 # 用户密码
 lan_ip='192.168.3'                       # lan 地址 192.168.3.1 一定别写后面的 .1
-wifi_password='1234567890'               # wifi密码,密码8位
+wifi_password='88888888'               # wifi密码,密码8位
 default_path='./user/shared/defaults.h'  # 默认文件配置目录
 
 echo '修改用户名'
@@ -34,7 +34,7 @@ sed -i "/CONFIG_FIRMWARE_INCLUDE_HTTPS/d"  .config              #  HTTPS support
 # C大
 sed -i '/CONFIG_FIRMWARE_INCLUDE_MENTOHUST/d' .config    # 删除配置项 MENTOHUST
 sed -i '/CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT/d' .config   # 删除配置项 SCUTCLIENT
-#sed -i '/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS/d' .config  # 删除配置项 SS plus+
+sed -i '/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS/d' .config  # 删除配置项 SS plus+
 sed -i '/CONFIG_FIRMWARE_INCLUDE_SSSERVER/d' .config     # 删除配置项 SS server
 sed -i '/CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER/d' .config # 删除配置项 DNS-FORWARDER
 sed -i '/CONFIG_FIRMWARE_INCLUDE_ADBYBY/d' .config       # 删除配置项 adbyby plus+
